@@ -1,0 +1,5 @@
+Esse projeto foi um teste de implementação de um sistema pesquisa de String "inteligente" que tentava diminuir os impactos
+ do erro de digitação em uma pesquisa.
+ Foi utilizado pensamento de transformar toda a string em um numero e comparar com o numero da string alvo.
+
+ se demonstrou infeciênte;
