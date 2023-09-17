@@ -1,0 +1,22 @@
+class Ponteiro05PassagemObjeto {
+ public static Cliente setar2(Cliente y){
+ y.setCodigo(6); y.setNome(“ff”);
+return y;
+ }
+ public static void setar1(Cliente x){
+ x.setCodigo(4); x.setNome(“dd”); x = new Cliente (5, “ee”);
+ }
+ public static void main (String[] args){
+ Cliente c1 = new Cliente(1, “aa”), c2 = null; c3 = new Cliente(2, “bb”);
+ c2 = c1; //1
+ setar1(c1); //2;
+ c3 = setar2(c2); //3
+
+} 
+}
+
+
+1// aqui c1 e c2 foi apontado para o objeto (1,aa) e c3 para (2,bb);
+
+agora c1 aponta para outro objeto (5,ee) e c2 os elemntos do objeto ao qual c2 aponta são (4,dd);
+por fim, c2 atributos de c2 foram novamente definidos para (6,ff) e c3 aponta para o mesmo objeto de c2;

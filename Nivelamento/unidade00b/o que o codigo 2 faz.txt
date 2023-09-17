@@ -1,0 +1,2 @@
+o código 2 utiliza 2 funções, a primeira toUpper, converte um caractere para maiusculo;
+depois, temos a função is vogal, que chama a toUpper, e depois retorna true se o caractere retornado for uma vogal(A,E,I,O,U);

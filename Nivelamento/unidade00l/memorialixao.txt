@@ -1,0 +1,11 @@
+class Lixao{
+public static void main(String[] args){
+Funcionario f1;
+f1 = new Funcionario();
+f1 = new Funcionario(5);
+}
+}
+
+
+f1 aponta para um objeto funcionário;
+f1 aponta para um novo objeto funcionário que recebe o argumento 5;

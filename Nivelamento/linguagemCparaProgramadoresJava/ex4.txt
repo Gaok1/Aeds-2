@@ -1,0 +1,16 @@
+int a[10], *b;
+b = a;
+b[5] = 100;
+printf(“\n%d -- %d”, a[5], b[5]);
+b = (int*) malloc(10*sizeof(int));
+b[7] = 100;
+printf(“\n%d -- %d”, a[7], b[7]);
+
+
+b = &a[0];
+
+b[5] e a[5]= 100;
+
+b = nova memoria alocada para 10 inteiros;
+b[7] = 100;
+a[7]= lixo de memoria; b[7] = 100;

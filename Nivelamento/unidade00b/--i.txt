@@ -1,0 +1,13 @@
+o --i é uma operação que ocorre antes de qualquer operação,
+
+o i-- é usado depois de uma operação, exemplo;
+
+int i =5;
+p = --i;
+p é igual a 4;
+
+int j = 5;
+p = j--;
+p é igual a 5 e j é igual a 4;
+
+então a diferença dos metodos é que um retorna o valor de i, o m1{return i--} e o m2{return --1} retorna o valor de i-1;

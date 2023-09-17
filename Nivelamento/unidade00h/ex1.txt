@@ -1,0 +1,16 @@
+ Por que o código abaixo imprime 2, 1, 0, 0, 1 e 2?
+
+ void printRecursivo(){
+printRecursivo(2);
+}
+void printRecursivo(int i){
+System.out.println(i);
+if (i > 0){
+printRecursivo(i - 1);
+}
+System.out.println(i);
+ }
+
+
+o programa printa i que fica 2,1,0;
+depois ele desempilha as chamadas e fica 0,1,2;

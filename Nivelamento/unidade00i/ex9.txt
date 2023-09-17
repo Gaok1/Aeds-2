@@ -1,0 +1,24 @@
+Um estudante de Algoritmos e Estruturas de Dados (em JAVA) implementou uma 
+classe Hora, cujo construtor recebe e armazena uma hora, minuto e segundo. O que 
+acontece se a classe X abaixo for colocada na mesma pasta que a classe Hora?
+
+class X {
+ public static void main (String[] args){
+ Hora h1 = new Hora(12, 30, 30);
+ Hora h2 = new Hora(12, 30, 30);
+ if (h1 == h2) 
+ System.out.println(“Identicos!”);
+ else
+ System.out.println(“Diferentes!”);
+ }
+}
+
+
+A) Escreve na tela “Identicos!”.
+B) Escreve na tela “Diferentes”.
+C) Erro de compilação.
+D) Erro de execução na linha do if.
+E) Erro de execução na declaração 
+dos objetos
+
+B) Escreve na tela “Diferentes”. (correta);

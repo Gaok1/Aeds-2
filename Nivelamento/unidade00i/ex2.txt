@@ -1,0 +1,20 @@
+Faça o quadro de memória do programa abaixo
+----------------------------
+Exercício (1)
+
+class Ponteiro02PassagemTipoPrimitivo {
+
+public static void passagemDeTipoPrimitivo(int a){
+ escrever(“a: ” + a);
+a = 10;
+escrever(“a: ” + a);
+}
+public static void main(String[] args) {
+int x = 5;
+escrever(“x: ” + x);
+passagemDeTipoPrimitivo(x);
+escrever(“x: ” + x);
+}
+}
+
+a memória seria 2 variavels (x,a){ x = 5, a = 10 } note que a variavel x não foi modificada pois não foi enviada para um ponteiro;

@@ -1,0 +1,7 @@
+x = 23; y = 23;
+x = x<<1
+y=y>>1;
+
+simbolos de << e >> signficam deslocamento de bits, então o numero binário 23 foi deslocado 1 bit para a esquerda e y foi deslocado 1 bitpara a direita;
+
+a seguir, foi printado [ 46 - 11]; o menos foi inserido como caractere, e não como operador, então a subtração n foi realizada;

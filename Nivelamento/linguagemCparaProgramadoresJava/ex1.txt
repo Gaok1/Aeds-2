@@ -1,0 +1,43 @@
+Faça o quadro de memória e mostre a saída na tela
+
+
+
+
+int *x1; int x2; int *x3;
+
+x1 = (int *) malloc (sizeof(int));
+printf(“\nx1(%p)(%i)(%p) x2(%i)(%p) x3(%p)(%i)(%p)”, x1, *x1, &x1, x2, &x2, x3, *x3, &x3);
+*x1 = 20;
+printf(“\nx1(%p)(%i)(%p) x2(%i)(%p) x3(%p)(%i)(%p)”, x1, *x1, &x1, x2, &x2, x3, *x3, &x3);
+x2 = *x1;
+printf(“\nx1(%p)(%i)(%p) x2(%i)(%p) x3(%p)(%i)(%p)”, x1, *x1, &x1, x2, &x2, x3, *x3, &x3);
+*x3 = x2 * *x1;
+printf(“\nx1(%p)(%i)(%p) x2(%i)(%p) x3(%p)(%i)(%p)”, x1, *x1, &x1, x2, &x2, x3, *x3, &x3);
+x3 = &x2;
+printf(“\nx1(%p)(%i)(%p) x2(%i)(%p) x3(%p)(%i)(%p)”, x1, *x1, &x1, x2, &x2, x3, *x3, &x3);
+x2 = 15;
+printf(“\nx1(%p)(%i)(%p) x2(%i)(%p) x3(%p)(%i)(%p)”, x1, *x1, &x1, x2, &x2, x3, *x3, &x3);
+
+Memoria:
+x1= obtem endereço da alocação de memorioa de 1 inteiro;
+valor da memoria alocada em x1 é 20;
+
+x2 tem o valor de 20;
+
+o valor ao qual x3 aponta(não foi atribuido ent eé nulo) = 20 * 20 = 400;
+
+x3 agora aponta para x2;
+
+x2 = 15;
+
+
+
+
+
+Saida:
+x1(Endereço A)(Valor Alocado)(Endereço de x1) x2(Valor de x2)(Endereço de x2) x3(Endereço não inicializado)(Valor não inicializado)(Endereço de x3)
+x1(Endereço A)(20)(Endereço de x1) x2(Valor de x2)(Endereço de x2) x3(Endereço não inicializado)(Valor não inicializado)(Endereço de x3)
+x1(Endereço A)(20)(Endereço de x1) x2(20)(Endereço de x2) x3(Endereço não inicializado)(Valor não inicializado)(Endereço de x3)
+x1(Endereço A)(20)(Endereço de x1) x2(20)(Endereço de x2) x3(Endereço A)(400)(Endereço de x3)
+x1(Endereço A)(20)(Endereço de x1) x2(20)(Endereço de x2) x3(Endereço de x2)(20)(Endereço de x3)
+x1(Endereço A)(20)(Endereço de x1) x2(15)(Endereço de x2) x3(Endereço de x2)(15)(Endereço de x3)

@@ -1,0 +1,2 @@
+O codigo printa o endereço da primeira variavel do arquivo
+ depois o endereço da 1 posição do “novo” array;

@@ -1,0 +1,29 @@
+Mostre o quadro de memória
+---------------------------- Algoritmos e Estruturas de Dados II (83)
+Exercício
+Conceitos Básicos - Introdução à
+Linguagem C para Programadores Java
+int *x1; int x2; int *x3;
+x1 = (int*) malloc(sizeof(int));
+*x1 = 20;
+x2 = *x1;
+*x3 = x2 * *x1;
+x3 = &x2;
+x2 = 15;
+x2 = 13 & 3;
+x2 = 13 | 3;
+x2 = 13 >> 1;
+x2 = 13 << 1
+
+x1: 20
+x2: 20
+x3: aponta para o mesmo endereço de memória que x2
+x2: 15
+
+x2 = 1 ( comparação de bits &);
+
+x2 = ( comparação de bits OR) = 15;
+
+x2 = 7 ( move 1 bit para a direita)
+
+x2 = 15;

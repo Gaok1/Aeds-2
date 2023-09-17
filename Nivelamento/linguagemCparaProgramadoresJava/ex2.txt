@@ -1,0 +1,14 @@
+Faça o quadro de memória:
+----------------------------
+Exercício
+double M [3][3];
+double *p = M[0];
+for (int i = 0; i < pow(MAXTAM, 2); i++, p++){
+*p=0.0;
+}
+
+
+matriz 3 por 3;
+p aponta para o primeiro valor da matriz; = m[0][0]
+
+p vai setando toda a matriz para 0 com base na aritmética de ponteiro double;

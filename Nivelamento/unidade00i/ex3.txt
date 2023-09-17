@@ -1,0 +1,23 @@
+class Ponteiro03PassagemArray {
+public static void passagemDeArray(int[ ] b){
+for (int i = 0; i < 5; i++){
+b[i] *= 5; escrever(“b[” + i + “]: ” + b[i]);
+}
+b = new int [5];
+for (int i = 0; i < 5; i++){
+b[i] = i; escrever(“b[” + i + “]: ” + b[i]);
+} }
+public static void main(String[] args) {
+int [] y = new int [5];
+for (int i = 0; i < 5; i++){
+y[i] = i; escrever(“y[” + i + “]: ” + y[i]);
+}
+passagemDeArray(y);
+for (int i = 0; i < 5; i++){
+ escrever(“y[” + i + “]: ” + y[i]);
+} } }
+
+
+nese codigo, o endereço do array foi passado de referência, portanto, o valor dele na main foi alterado como consequência do uso de ponteiro;
+lembrando que passar array como argumento na verdade se manda o endereço na memoria daquele valor ou array;
+então o array final ficou y[0,5,10,15,20]; e  b fica como [0,1,2,3,4] pois foi alocada outra parte da memoria para ele;

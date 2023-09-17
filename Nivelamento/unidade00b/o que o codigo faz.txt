@@ -1,0 +1,3 @@
+o código doidao que aceita um char como argumento:
+o código converte o char para int, revelando seu valor na tabela ascii, a seguir ele testa todos os valores de vogais (maiuscula e minuscula)
+se o char for uma vogal, ele retorna true, caso contrario, ele retorna false;

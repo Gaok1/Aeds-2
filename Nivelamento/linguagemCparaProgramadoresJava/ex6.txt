@@ -1,0 +1,11 @@
+Cliente c;
+c.codigo = 5;
+Cliente *p = NULL;
+p = (Cliente*) malloc (sizeof(Cliente));
+p->codigo = 6;
+Cliente *p2 = &c;
+p2->codigo = 7;
+
+c.codigo: 7
+p->codigo: 6
+p2->codigo: 7

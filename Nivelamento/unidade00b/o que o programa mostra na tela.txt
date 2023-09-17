@@ -1,0 +1,3 @@
+os valores printados infinitamente até o usuário fechar o programa será ao longo do processo{
+    127 32,762 2,147,483,647 9,223,372,036,854,775,807
+}
