@@ -1,0 +1,38 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Jogador",
+      "request": "launch",
+      "mainClass": "Jogador",
+      "projectName": "Java_ef5c4dce"
+    },
+    {
+      "type": "java",
+      "name": "Letra",
+      "request": "launch",
+      "mainClass": "output.Letra",
+      "projectName": "Java_ef5c4dce"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/Gaok1/Desktop/PUC/Aeds 2/TP2/Java",
+      "program": "c:/Users/Gaok1/Desktop/PUC/Aeds 2/TP2/Java/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+Listando diretÃ³rio atual: /home/u1384017/verde-correcao/pendente/tmp
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp
+Arquivo ou Pasta: 35367
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35367
+Arquivo ou Pasta: pub.err
+Arquivo ou Pasta: Jogador.class
+Arquivo ou Pasta: Q01.class
+Arquivo ou Pasta: pri.in
+Arquivo ou Pasta: pri.err
+Arquivo ou Pasta: pub.out
+Arquivo ou Pasta: .java
+Arquivo ou Pasta: pubs.zip
+Arquivo ou Pasta: pri.out
+Arquivo ou Pasta: pub.in
+Arquivo ou Pasta: 31525
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31525
+Arquivo ou Pasta: matr�cula_binaria.txt
+Arquivo ou Pasta: 35410
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35410
+Arquivo ou Pasta: pub.err
+Arquivo ou Pasta: pri_231057.out
+Arquivo ou Pasta: flag
+Arquivo ou Pasta: Livro.class
+Arquivo ou Pasta: pub_231057.out
+Arquivo ou Pasta: pri.in
+Arquivo ou Pasta: Livro.java
+Arquivo ou Pasta: pri.err
+Arquivo ou Pasta: pub.out
+Arquivo ou Pasta: pubs.zip
+Arquivo ou Pasta: pri.out
+Arquivo ou Pasta: pub.in
+Arquivo ou Pasta: 33925
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/33925
+Arquivo ou Pasta: pri.in
+Arquivo ou Pasta: pub.out
+Arquivo ou Pasta: pubs.zip
+Arquivo ou Pasta: pri.out
+Arquivo ou Pasta: pub.in
+Arquivo ou Pasta: 27606
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/27606
+Arquivo ou Pasta: matr�cula_selecaoRecursiva.txt
+Arquivo ou Pasta: 32369
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32369
+Arquivo ou Pasta: matr�cula_sele��oRecursiva.txt
+Arquivo ou Pasta: 32866
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32866
+Arquivo ou Pasta: matr�cula_selecao.txt
+Arquivo ou Pasta: 32356
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32356
+Arquivo ou Pasta: matr�cula_binaria.txt
+Arquivo ou Pasta: 27600
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/27600
+Arquivo ou Pasta: matr�cula_selecaoRecursiva.txt
+Arquivo ou Pasta: 27602
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/27602
+Arquivo ou Pasta: matr�cula_selecaoRecursiva.txt
+Arquivo ou Pasta: 31508
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31508
+Arquivo ou Pasta: matr�cula_binaria.txt
+Arquivo ou Pasta: 35404
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35404
+Arquivo ou Pasta: pub.err
+Arquivo ou Pasta: flag
+Arquivo ou Pasta: Livro.class
+Arquivo ou Pasta: pub_231057.out
+Arquivo ou Pasta: pri.in
+Arquivo ou Pasta: Livro.java
+Arquivo ou Pasta: pri.err
+Arquivo ou Pasta: pub.out
+Arquivo ou Pasta: pubs.zip
+Arquivo ou Pasta: pri.out
+Arquivo ou Pasta: pub.in
+Arquivo ou Pasta: 31509
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31509
+Arquivo ou Pasta: matr�cula_binaria.txt
+Arquivo ou Pasta: 32355
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32355
+Arquivo ou Pasta: matr�cula_binaria.txt
+Arquivo ou Pasta: 35252
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35252
+Arquivo ou Pasta: pub.err
+Arquivo ou Pasta: flag
+Arquivo ou Pasta: pri_139067.out
+Arquivo ou Pasta: pri.in
+Arquivo ou Pasta: Player.class
+Arquivo ou Pasta: pri.err
+Arquivo ou Pasta: pub.out
+Arquivo ou Pasta: pub_139067.out
+Arquivo ou Pasta: Player.java
+Arquivo ou Pasta: pubs.zip
+Arquivo ou Pasta: pri.out
+Arquivo ou Pasta: pub.in
+Arquivo ou Pasta: 35311
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35311
+Arquivo ou Pasta: pub.err
+Arquivo ou Pasta: run
+Arquivo ou Pasta: pri.in
+Arquivo ou Pasta: pub_233647.out
+Arquivo ou Pasta: pri.err
+Arquivo ou Pasta: pub.out
+Arquivo ou Pasta: pubs.zip
+Arquivo ou Pasta: pri.out
+Arquivo ou Pasta: pub.in
+Arquivo ou Pasta: TP02Q08.c
+Arquivo ou Pasta: 35407
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35407
+Arquivo ou Pasta: pub.err
+Arquivo ou Pasta: flag
+Arquivo ou Pasta: Livro.class
+Arquivo ou Pasta: pub_231057.out
+Arquivo ou Pasta: pri.in
+Arquivo ou Pasta: Livro.java
+Arquivo ou Pasta: pri.err
+Arquivo ou Pasta: pub.out
+Arquivo ou Pasta: pubs.zip
+Arquivo ou Pasta: pri.out
+Arquivo ou Pasta: pub.in
+Arquivo ou Pasta: 30817
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/30817
+Arquivo ou Pasta: matr�cula_selecao.txt
+Arquivo ou Pasta: 41945
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/41945
+Arquivo ou Pasta: pub.err
+Arquivo ou Pasta: DiretorioTMP.class
+Arquivo ou Pasta: DiretorioTMP.java
+Arquivo ou Pasta: pri.in
+Arquivo ou Pasta: pub_229257.out
+Arquivo ou Pasta: pri.err
+Arquivo ou Pasta: pub.out
+Arquivo ou Pasta: pubs.zip
+Arquivo ou Pasta: pri.out
+Arquivo ou Pasta: pub.in
+Arquivo ou Pasta: 33998
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/33998
+Arquivo ou Pasta: pub.err
+Arquivo ou Pasta: pri_228577.out
+Arquivo ou Pasta: run
+Arquivo ou Pasta: pri.in
+Arquivo ou Pasta: pri.err
+Arquivo ou Pasta: pub.out
+Arquivo ou Pasta: pri.out
+Arquivo ou Pasta: pub_228577.out
+Arquivo ou Pasta: pub.in
+Arquivo ou Pasta: Q04.c
+Arquivo ou Pasta: 35203
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35203
+Arquivo ou Pasta: pri.in
+Arquivo ou Pasta: pub.out
+Arquivo ou Pasta: pri.out
+Arquivo ou Pasta: pub.in
+Arquivo ou Pasta: 32370
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32370
+Arquivo ou Pasta: matr�cula_binaria.txt
+Arquivo ou Pasta: 31596
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31596
+Arquivo ou Pasta: matr�cula_selecao.txt
+Arquivo ou Pasta: 33149
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/33149
+Arquivo ou Pasta: matr�cula_selecao.txt
+Arquivo ou Pasta: 27597
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/27597
+Arquivo ou Pasta: matr�cula_selecaoRecursiva.txt
+Arquivo ou Pasta: 32868
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32868
+Arquivo ou Pasta: matr�cula_selecao.txt
+Arquivo ou Pasta: 35406
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35406
+Arquivo ou Pasta: pub.err
+Arquivo ou Pasta: pri_238965.out
+Arquivo ou Pasta: run
+Arquivo ou Pasta: pri.in
+Arquivo ou Pasta: pub_238965.out
+Arquivo ou Pasta: pri.err
+Arquivo ou Pasta: pub.out
+Arquivo ou Pasta: JogadorQuicksort.c
+Arquivo ou Pasta: pubs.zip
+Arquivo ou Pasta: pri.out
+Arquivo ou Pasta: pub.in
+Arquivo ou Pasta: 35283
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35283
+Arquivo ou Pasta: pub.err
+Arquivo ou Pasta: Jogador.class
+Arquivo ou Pasta: Insercao.java
+Arquivo ou Pasta: flag
+Arquivo ou Pasta: pri.in
+Arquivo ou Pasta: pri.err
+Arquivo ou Pasta: pub.out
+Arquivo ou Pasta: Insercao.class
+Arquivo ou Pasta: pub_231761.out
+Arquivo ou Pasta: pubs.zip
+Arquivo ou Pasta: pri.out
+Arquivo ou Pasta: pub.in
+Arquivo ou Pasta: 31599
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31599
+Arquivo ou Pasta: matr�cula_selecao.txt
+Arquivo ou Pasta: 35032
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35032
+Arquivo ou Pasta: pri.in
+Arquivo ou Pasta: pub.out
+Arquivo ou Pasta: pri.out
+Arquivo ou Pasta: pub.in
+Arquivo ou Pasta: 35163
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35163
+Arquivo ou Pasta: pri.in
+Arquivo ou Pasta: pub.out
+Arquivo ou Pasta: pri.out
+Arquivo ou Pasta: pub.in
+Arquivo ou Pasta: 32362
+Listando diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32362
+Arquivo ou Pasta: matr�cula_binaria.txt

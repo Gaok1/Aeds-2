@@ -1,0 +1,13 @@
+Listando diretÃ³rio atual: /home/u1384017/verde-correcao/pendente/tmp/41800
+Entrando no diretÃ³rio: 41800
+Arquivo: pub.err
+Arquivo: Teste.java
+Arquivo: pri.in
+Arquivo: pub_229257.out
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: Teste.class
+Arquivo: pub.in
+Saindo do diretÃ³rio: 41800

@@ -1,0 +1,59 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "MatrizLigada",
+      "request": "launch",
+      "mainClass": "MatrizLigada",
+      "projectName": "Q18_9c5de52c"
+    },
+    {
+      "type": "java",
+      "name": "Fila",
+      "request": "launch",
+      "mainClass": "Fila",
+      "projectName": "Q18_9c5de52c"
+    },
+    {
+      "type": "java",
+      "name": "listPath",
+      "request": "launch",
+      "mainClass": "listPath",
+      "projectName": "Q18_9c5de52c"
+    },
+    {
+      "type": "java",
+      "name": "Teste",
+      "request": "launch",
+      "mainClass": "Teste",
+      "projectName": "Q18_9c5de52c"
+    },
+    {
+      "type": "java",
+      "name": "ListarArquivosDiretorio",
+      "request": "launch",
+      "mainClass": "ListarArquivosDiretorio",
+      "projectName": "Q18_9c5de52c"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/Gaok1/Desktop/PUC/Aeds 2/TP2/Q18",
+      "program": "c:/Users/Gaok1/Desktop/PUC/Aeds 2/TP2/Q18/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

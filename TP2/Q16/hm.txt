@@ -1,0 +1,203 @@
+"Arquivos e pastas no diretÃ³rio atual: 
+Arquivo: pub.err 
+Arquivo: Q16.class 
+Arquivo: Q16.java 
+Arquivo: pri.in 
+Arquivo: pub_229257.out 
+Arquivo: pri.err 
+Arquivo: pub.out 
+Arquivo: pubs.zip 
+Arquivo: pri.out 
+Arquivo: pub.in 
+Arquivos e pastas no diretÃ³rio pai: 
+
+Entrando na pasta: 35367 
+Arquivo: pub.err 
+Arquivo: Jogador.class 
+Arquivo: Q01.class 
+Arquivo: pri.in 
+Arquivo: pri.err 
+Arquivo: pub.out 
+Arquivo: .java 
+Arquivo: pubs.zip 
+Arquivo: pri.out 
+Arquivo: pub.in 
+Saindo da pasta: 35367 
+Entrando na pasta: 31525 
+Saindo da pasta: 31525 
+Entrando na pasta: 35410 
+Arquivo: pub.err 
+Arquivo: pri_231057.out 
+Arquivo: flag 
+Arquivo: Livro.class 
+Arquivo: pub_231057.out 
+Arquivo: pri.in 
+Arquivo: Livro.java 
+Arquivo: pri.err 
+Arquivo: pub.out 
+Arquivo: pubs.zip 
+Arquivo: pri.out 
+Arquivo: pub.in 
+Saindo da pasta: 35410 
+Entrando na pasta: 33925 
+Arquivo: pri.in 
+Arquivo: pub.out 
+Arquivo: pubs.zip 
+Arquivo: pri.out 
+Arquivo: pub.in 
+Saindo da pasta: 33925 
+Entrando na pasta: 27606 
+Saindo da pasta: 27606 
+Entrando na pasta: 32369 
+Saindo da pasta: 32369 
+Entrando na pasta: 32866 
+Saindo da pasta: 32866 
+Entrando na pasta: 32356 
+Saindo da pasta: 32356 
+Entrando na pasta: 27600 
+Saindo da pasta: 27600 
+Entrando na pasta: 40363 
+Arquivo: pub.err 
+Arquivo: Q16.class 
+Arquivo: Q16.java 
+Arquivo: pri.in 
+Arquivo: pub_229257.out 
+Arquivo: pri.err 
+Arquivo: pub.out 
+Arquivo: pubs.zip 
+Arquivo: pri.out 
+Arquivo: pub.in 
+Saindo da pasta: 40363 
+Entrando na pasta: 27602 
+Saindo da pasta: 27602 
+Entrando na pasta: 31508 
+Saindo da pasta: 31508 
+Entrando na pasta: 35404 
+Arquivo: pub.err 
+Arquivo: flag 
+Arquivo: Livro.class 
+Arquivo: pub_231057.out 
+Arquivo: pri.in 
+Arquivo: Livro.java 
+Arquivo: pri.err 
+Arquivo: pub.out 
+Arquivo: pubs.zip 
+Arquivo: pri.out 
+Arquivo: pub.in 
+Saindo da pasta: 35404 
+Entrando na pasta: 31509 
+Saindo da pasta: 31509 
+Entrando na pasta: 32355 
+Saindo da pasta: 32355 
+Entrando na pasta: 35252 
+Arquivo: pub.err 
+Arquivo: flag 
+Arquivo: pri_139067.out 
+Arquivo: pri.in 
+Arquivo: Player.class 
+Arquivo: pri.err 
+Arquivo: pub.out 
+Arquivo: pub_139067.out 
+Arquivo: Player.java 
+Arquivo: pubs.zip 
+Arquivo: pri.out 
+Arquivo: pub.in 
+Saindo da pasta: 35252 
+Entrando na pasta: 35311 
+Arquivo: pub.err 
+Arquivo: run 
+Arquivo: pri.in 
+Arquivo: pub_233647.out 
+Arquivo: pri.err 
+Arquivo: pub.out 
+Arquivo: pubs.zip 
+Arquivo: pri.out 
+Arquivo: pub.in 
+Arquivo: TP02Q08.c 
+Saindo da pasta: 35311 
+Entrando na pasta: 35407 
+Arquivo: pub.err 
+Arquivo: flag 
+Arquivo: Livro.class 
+Arquivo: pub_231057.out 
+Arquivo: pri.in 
+Arquivo: Livro.java 
+Arquivo: pri.err 
+Arquivo: pub.out 
+Arquivo: pubs.zip 
+Arquivo: pri.out 
+Arquivo: pub.in 
+Saindo da pasta: 35407 
+Entrando na pasta: 30817 
+Saindo da pasta: 30817 
+Entrando na pasta: 33998 
+Arquivo: pub.err 
+Arquivo: pri_228577.out 
+Arquivo: run 
+Arquivo: pri.in 
+Arquivo: pri.err 
+Arquivo: pub.out 
+Arquivo: pri.out 
+Arquivo: pub_228577.out 
+Arquivo: pub.in 
+Arquivo: Q04.c 
+Saindo da pasta: 33998 
+Entrando na pasta: 35203 
+Arquivo: pri.in 
+Arquivo: pub.out 
+Arquivo: pri.out 
+Arquivo: pub.in 
+Saindo da pasta: 35203 
+Entrando na pasta: 32370 
+Saindo da pasta: 32370 
+Entrando na pasta: 31596 
+Saindo da pasta: 31596 
+Entrando na pasta: 33149 
+Saindo da pasta: 33149 
+Entrando na pasta: 27597 
+Saindo da pasta: 27597 
+Entrando na pasta: 32868 
+Saindo da pasta: 32868 
+Entrando na pasta: 35406 
+Arquivo: pub.err 
+Arquivo: pri_238965.out 
+Arquivo: run 
+Arquivo: pri.in 
+Arquivo: pub_238965.out 
+Arquivo: pri.err 
+Arquivo: pub.out 
+Arquivo: JogadorQuicksort.c 
+Arquivo: pubs.zip 
+Arquivo: pri.out 
+Arquivo: pub.in 
+Saindo da pasta: 35406 
+Entrando na pasta: 35283 
+Arquivo: pub.err 
+Arquivo: Jogador.class 
+Arquivo: Insercao.java 
+Arquivo: flag 
+Arquivo: pri.in 
+Arquivo: pri.err 
+Arquivo: pub.out 
+Arquivo: Insercao.class 
+Arquivo: pub_231761.out 
+Arquivo: pubs.zip 
+Arquivo: pri.out 
+Arquivo: pub.in 
+Saindo da pasta: 35283 
+Entrando na pasta: 31599 
+Saindo da pasta: 31599 
+Entrando na pasta: 35032 
+Arquivo: pri.in 
+Arquivo: pub.out 
+Arquivo: pri.out 
+Arquivo: pub.in 
+Saindo da pasta: 35032 
+Entrando na pasta: 35163 
+Arquivo: pri.in 
+Arquivo: pub.out 
+Arquivo: pri.out 
+Arquivo: pub.in 
+Saindo da pasta: 35163 
+Entrando na pasta: 32362 
+Saindo da pasta: 32362 

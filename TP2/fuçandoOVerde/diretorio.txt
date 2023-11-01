@@ -1,0 +1,435 @@
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/41814
+Arquivo: pub.err
+Arquivo: Teste.java
+Arquivo: pri.in
+Arquivo: pub_229257.out
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: Teste.class
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/41814
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35367
+Arquivo: pub.err
+Arquivo: Jogador.class
+Arquivo: Q01.class
+Arquivo: pri.in
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: .java
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35367
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31525
+Arquivo: matr�cula_binaria.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31525
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35410
+Arquivo: pub.err
+Arquivo: pri_231057.out
+Arquivo: flag
+Arquivo: Livro.class
+Arquivo: pub_231057.out
+Arquivo: pri.in
+Arquivo: Livro.java
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35410
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/33925
+Arquivo: pri.in
+Arquivo: pub.out
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/33925
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/27606
+Arquivo: matr�cula_selecaoRecursiva.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/27606
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32369
+Arquivo: matr�cula_sele��oRecursiva.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32369
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32866
+Arquivo: matr�cula_selecao.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32866
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32356
+Arquivo: matr�cula_binaria.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32356
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/27600
+Arquivo: matr�cula_selecaoRecursiva.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/27600
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/27602
+Arquivo: matr�cula_selecaoRecursiva.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/27602
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31508
+Arquivo: matr�cula_binaria.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31508
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35404
+Arquivo: pub.err
+Arquivo: flag
+Arquivo: Livro.class
+Arquivo: pub_231057.out
+Arquivo: pri.in
+Arquivo: Livro.java
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35404
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31509
+Arquivo: matr�cula_binaria.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31509
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32355
+Arquivo: matr�cula_binaria.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32355
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35252
+Arquivo: pub.err
+Arquivo: flag
+Arquivo: pri_139067.out
+Arquivo: pri.in
+Arquivo: Player.class
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: pub_139067.out
+Arquivo: Player.java
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35252
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35311
+Arquivo: pub.err
+Arquivo: run
+Arquivo: pri.in
+Arquivo: pub_233647.out
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: pub.in
+Arquivo: TP02Q08.c
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35311
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35407
+Arquivo: pub.err
+Arquivo: flag
+Arquivo: Livro.class
+Arquivo: pub_231057.out
+Arquivo: pri.in
+Arquivo: Livro.java
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35407
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/41814
+Arquivo: pub.err
+Arquivo: Teste.java
+Arquivo: pri.in
+Arquivo: pub_229257.out
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: Teste.class
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/41814
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/30817
+Arquivo: matr�cula_selecao.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/30817
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/33998
+Arquivo: pub.err
+Arquivo: pri_228577.out
+Arquivo: run
+Arquivo: pri.in
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: pri.out
+Arquivo: pub_228577.out
+Arquivo: pub.in
+Arquivo: Q04.c
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/33998
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35203
+Arquivo: pri.in
+Arquivo: pub.out
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35203
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32370
+Arquivo: matr�cula_binaria.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32370
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31596
+Arquivo: matr�cula_selecao.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31596
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/33149
+Arquivo: matr�cula_selecao.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/33149
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/27597
+Arquivo: matr�cula_selecaoRecursiva.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/27597
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32868
+Arquivo: matr�cula_selecao.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32868
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35406
+Arquivo: pub.err
+Arquivo: pri_238965.out
+Arquivo: run
+Arquivo: pri.in
+Arquivo: pub_238965.out
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: JogadorQuicksort.c
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35406
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35283
+Arquivo: pub.err
+Arquivo: Jogador.class
+Arquivo: Insercao.java
+Arquivo: flag
+Arquivo: pri.in
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: Insercao.class
+Arquivo: pub_231761.out
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35283
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31599
+Arquivo: matr�cula_selecao.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31599
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35032
+Arquivo: pri.in
+Arquivo: pub.out
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35032
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35163
+Arquivo: pri.in
+Arquivo: pub.out
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35163
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32362
+Arquivo: matr�cula_binaria.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32362
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35367
+Arquivo: pub.err
+Arquivo: Jogador.class
+Arquivo: Q01.class
+Arquivo: pri.in
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: .java
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35367
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31525
+Arquivo: matr�cula_binaria.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31525
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35410
+Arquivo: pub.err
+Arquivo: pri_231057.out
+Arquivo: flag
+Arquivo: Livro.class
+Arquivo: pub_231057.out
+Arquivo: pri.in
+Arquivo: Livro.java
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35410
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/33925
+Arquivo: pri.in
+Arquivo: pub.out
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/33925
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/27606
+Arquivo: matr�cula_selecaoRecursiva.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/27606
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32369
+Arquivo: matr�cula_sele��oRecursiva.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32369
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32866
+Arquivo: matr�cula_selecao.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32866
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32356
+Arquivo: matr�cula_binaria.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32356
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/27600
+Arquivo: matr�cula_selecaoRecursiva.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/27600
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/27602
+Arquivo: matr�cula_selecaoRecursiva.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/27602
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31508
+Arquivo: matr�cula_binaria.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31508
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35404
+Arquivo: pub.err
+Arquivo: flag
+Arquivo: Livro.class
+Arquivo: pub_231057.out
+Arquivo: pri.in
+Arquivo: Livro.java
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35404
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31509
+Arquivo: matr�cula_binaria.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31509
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32355
+Arquivo: matr�cula_binaria.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32355
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35252
+Arquivo: pub.err
+Arquivo: flag
+Arquivo: pri_139067.out
+Arquivo: pri.in
+Arquivo: Player.class
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: pub_139067.out
+Arquivo: Player.java
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35252
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35311
+Arquivo: pub.err
+Arquivo: run
+Arquivo: pri.in
+Arquivo: pub_233647.out
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: pub.in
+Arquivo: TP02Q08.c
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35311
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35407
+Arquivo: pub.err
+Arquivo: flag
+Arquivo: Livro.class
+Arquivo: pub_231057.out
+Arquivo: pri.in
+Arquivo: Livro.java
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35407
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/41814
+Arquivo: pub.err
+Arquivo: Teste.java
+Arquivo: pri.in
+Arquivo: pub_229257.out
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: Teste.class
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/41814
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/30817
+Arquivo: matr�cula_selecao.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/30817
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/33998
+Arquivo: pub.err
+Arquivo: pri_228577.out
+Arquivo: run
+Arquivo: pri.in
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: pri.out
+Arquivo: pub_228577.out
+Arquivo: pub.in
+Arquivo: Q04.c
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/33998
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35203
+Arquivo: pri.in
+Arquivo: pub.out
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35203
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32370
+Arquivo: matr�cula_binaria.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32370
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31596
+Arquivo: matr�cula_selecao.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31596
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/33149
+Arquivo: matr�cula_selecao.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/33149
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/27597
+Arquivo: matr�cula_selecaoRecursiva.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/27597
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32868
+Arquivo: matr�cula_selecao.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32868
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35406
+Arquivo: pub.err
+Arquivo: pri_238965.out
+Arquivo: run
+Arquivo: pri.in
+Arquivo: pub_238965.out
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: JogadorQuicksort.c
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35406
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35283
+Arquivo: pub.err
+Arquivo: Jogador.class
+Arquivo: Insercao.java
+Arquivo: flag
+Arquivo: pri.in
+Arquivo: pri.err
+Arquivo: pub.out
+Arquivo: Insercao.class
+Arquivo: pub_231761.out
+Arquivo: pubs.zip
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35283
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31599
+Arquivo: matr�cula_selecao.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/31599
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35032
+Arquivo: pri.in
+Arquivo: pub.out
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35032
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35163
+Arquivo: pri.in
+Arquivo: pub.out
+Arquivo: pri.out
+Arquivo: pub.in
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/35163
+Entrando no diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32362
+Arquivo: matr�cula_binaria.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp/32362
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente/tmp
+Arquivo: 41814.txt
+Saindo do diretÃ³rio: /home/u1384017/verde-correcao/pendente
