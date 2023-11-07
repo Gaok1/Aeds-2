@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.util.Random;
 
 public class Arvore {
     private class Node {
@@ -186,17 +187,27 @@ public class Arvore {
 
     public static void main(String args[]) {
         Arvore tree = new Arvore(10);
-        tree.inserir(5);
-        tree.inserir(15);
-        tree.inserir(13);
-        tree.inserir(20);
-        tree.inserir(14);
-        tree.inserir(12);
+        Random rand = new Random();
+        int repet = rand.nextInt(15) + 10;
+        for (int i = 0; i < repet; i++) {
+            tree.inserir(rand.nextInt(100));
+        }
         tree.printar();
-
-        SwingUtilities.invokeLater(() -> {
+        
+         SwingUtilities.invokeLater(() -> {
             tree.desenharArvore();
         });
+
+        while (true) {
+            System.out.println("digite o numero que deve ser retirao da arvore");
+            int x = Integer.parseInt(System.console().readLine());
+            tree.remover(x);
+             SwingUtilities.invokeLater(() -> {
+            tree.desenharArvore();
+        });
+        }
+
+       
 
     }
 
