@@ -1,18 +1,27 @@
 import javax.swing.*;
 import java.awt.*;
-import java.util.Random;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent; // Certifique-se de importar este MouseEvent
+import java.util.*;
+
+
 
 public class Arvore {
     private class Node {
         int valor;
         Node esq;
         Node dir;
+        int x; // Adicione coordenada x
+        int y; // Adicione coordenada y
 
-        Node(int valor) {
-            this.valor = valor;
-            esq = null;
-            dir = null;
-        }
+       
+    public Node(int valor) {
+        this.valor = valor;
+        esq = null;
+        dir = null;
+        x = 0; // Inicialize a coordenada x
+        y = 0; // Inicialize a coordenada y
+    }
 
         public int getValor() {
             return valor;
@@ -25,8 +34,25 @@ public class Arvore {
         public boolean hasesq() {
             return (esq != null);
         }
-
+        
+    public int getX() {
+        return x;
     }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+}
+
+    
 
     private Node root = null;
 
@@ -86,19 +112,24 @@ public class Arvore {
             if (valor < temp.getValor()) {
                 if (temp.hasesq()) {
                     temp = temp.esq;
-                } else {
+                } else if(temp.getValor() != valor) {
                     temp.esq = new Node(valor);
                     System.out.println("inserido na esquerda");
+                    return;
+                }else{
+                     System.out.println("valor ja existe");
                     return;
                 }
             } else {
                 if (temp.hasdir()) {
                     temp = temp.dir;
-                } else {
+                } else if(temp.getValor() != valor){
                     temp.dir = new Node(valor);
                     System.out.println("inserido na direita");
                     return;
-                }
+                }else{
+                    System.out.println("valor ja existe");
+                    return;}
             }
         }
 
@@ -193,7 +224,7 @@ public class Arvore {
             tree.inserir(rand.nextInt(100));
         }
         tree.printar();
-        
+
          SwingUtilities.invokeLater(() -> {
             tree.desenharArvore();
         });
@@ -211,41 +242,88 @@ public class Arvore {
 
     }
 
-    class DesenhoArvore extends JPanel {
-        private Node raiz;
+   public class DesenhoArvore extends JPanel {
+    private Node raiz;
+    private Point mousePressedPoint;
 
-        DesenhoArvore(Node raiz) {
-            this.raiz = raiz;
+    DesenhoArvore(Node raiz) {
+        this.raiz = raiz;
+
+        addMouseListener(new MouseAdapter() {
+      
+            public void mousePressed(MouseEvent e) {
+                mousePressedPoint = e.getPoint();
+            }
+        });
+
+        addMouseMotionListener(new MouseAdapter() {
+           
+            public void mouseDragged(MouseEvent e) {
+                if (mousePressedPoint != null) {
+                    int dx = e.getX() - mousePressedPoint.x;
+                    int dy = e.getY() - mousePressedPoint.y;
+                    mousePressedPoint = e.getPoint();
+                    // Atualize as coordenadas dos nós da árvore com dx e dy para mover a tela.
+                    // Redesenhe a árvore com as novas coordenadas.
+                    atualizarCoordenadasArvore(raiz, dx, dy);
+                    repaint(); // Redesenhe a tela
+                }
+            }
+        });
+
+        addMouseListener(new MouseAdapter() {
+          
+            public void mouseReleased(MouseEvent e) {
+                mousePressedPoint = null;
+            }
+        });
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        desenharArvore(g, getWidth() / 2, 30, raiz, getWidth() / 4);
+    }
+
+    private void desenharArvore(Graphics g, int x, int y, Node node, int xOffset) {
+        if (node == null) {
+            return;
         }
 
-        @Override
-        protected void paintComponent(Graphics g) {
-            super.paintComponent(g);
-            desenharArvore(g, getWidth() / 2, 30, raiz, getWidth() / 4);
+        g.drawOval(x - 15, y - 15, 30, 30);
+        g.drawString(Integer.toString(node.getValor()), x - 5, y + 5);
+
+        if (node.hasesq()) {
+            int newX = x - xOffset;
+            int newY = y + 60;
+            g.drawLine(x, y + 15, newX, newY - 15);
+            desenharArvore(g, newX, newY, node.esq, xOffset / 2);
         }
 
-        private void desenharArvore(Graphics g, int x, int y, Node node, int xOffset) {
-            if (node == null) {
-                return;
-            }
-
-            g.drawOval(x - 15, y - 15, 30, 30);
-            g.drawString(Integer.toString(node.getValor()), x - 5, y + 5);
-
-            if (node.hasesq()) {
-                int newX = x - xOffset;
-                int newY = y + 60;
-                g.drawLine(x, y + 15, newX, newY - 15);
-                desenharArvore(g, newX, newY, node.esq, xOffset / 2);
-            }
-
-            if (node.hasdir()) {
-                int newX = x + xOffset;
-                int newY = y + 60;
-                g.drawLine(x, y + 15, newX, newY - 15);
-                desenharArvore(g, newX, newY, node.dir, xOffset / 2);
-            }
+        if (node.hasdir()) {
+            int newX = x + xOffset;
+            int newY = y + 60;
+            g.drawLine(x, y + 15, newX, newY - 15);
+            desenharArvore(g, newX, newY, node.dir, xOffset / 2);
         }
     }
 
+    private void atualizarCoordenadasArvore(Node node, int dx, int dy) {
+        if (node == null) {
+            return;
+        }
+
+        node.setX(node.getX() + dx);
+        node.setY(node.getY() + dy);
+
+        if (node.hasesq()) {
+            atualizarCoordenadasArvore(node.esq, dx, dy);
+        }
+
+        if (node.hasdir()) {
+            atualizarCoordenadasArvore(node.dir, dx, dy);
+        }
+    }
 }
+}
+
