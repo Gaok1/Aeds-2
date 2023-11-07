@@ -9,7 +9,7 @@ public class FilaCircular {
     }
 
     public boolean buscaBinaria(int x) {
-        int inc, fin, meio;
+        int inc, fin;
         inc = inicio;
         fin = fim-1;
         int distancia = 0;

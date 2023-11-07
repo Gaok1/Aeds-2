@@ -4,8 +4,7 @@
 #include <string.h>
 #include <time.h>
 
-typedef struct
-    Jogador
+typedef struct Jogador
 {
     int id;
     char nome[100];
@@ -17,7 +16,7 @@ typedef struct
     char estadoNascimento[100];
 } Jogador;
 
-int inicio, fim;
+
 
 Jogador clone(Jogador *jogador)
 {
@@ -121,9 +120,111 @@ void trocar(int *a, int *b)
     *b = temp;
 }
 
+
+
+
+
+///////////////////////// FILA Ligada /////////////////////////
+
+typedef struct Node
+{
+    Jogador value;
+    struct Node *next;
+
+} Node;
+
+typedef struct Fila
+{
+    int tamanho;
+    Node *primeiro;
+    Node *ultimo;
+} Fila;
+
+Fila fila; // declarando a fila globalmente
+
+iniciarFila()
+{
+    fila.primeiro = NULL;
+    fila.ultimo = NULL;
+    fila.tamanho = 0;
+}
+void remover()
+{
+    if (fila.tamanho == 0)
+    {
+        return;
+    }
+    fila.tamanho--;
+    printf("(R) %s\n", fila.primeiro->value.nome);
+    Node *temp = fila.primeiro;
+    if(fila.primeiro == fila.ultimo){
+        fila.primeiro = NULL;
+        fila.ultimo = NULL;
+        free(temp);
+        return;
+    }
+    fila.primeiro = fila.primeiro->next;
+    free(temp);
+}
+
+void removersemprint()
+{
+    if (fila.tamanho == 0)
+    {
+        return;
+    }
+    fila.tamanho--;
+
+    Node *temp = fila.primeiro;
+    if(fila.primeiro == fila.ultimo){
+        fila.primeiro = NULL;
+        fila.ultimo = NULL;
+        free(temp);
+        return;
+    }
+    fila.primeiro = fila.primeiro->next;
+    free(temp);
+}
+
+void inserir(Jogador x)
+{
+    if (fila.tamanho == 5)
+    { // tamanho maximo da fila
+        removersemprint();
+    }
+    Node *novo = (Node *)malloc(sizeof(Node));
+    novo->value = x;
+    if (fila.tamanho == 0)
+    {
+
+        fila.primeiro = novo;
+        fila.ultimo = novo;
+        fila.tamanho++;
+        return;
+    }
+    fila.tamanho++;
+    fila.ultimo->next = novo;
+    fila.ultimo = novo;
+    return;
+}
+
+void calcularmedia()
+{
+    Node *temp = fila.primeiro;
+    int media=0, count = 0, altura;
+    while (temp != NULL)
+    {
+        altura = atoi(temp->value.altura);  
+        media += altura;
+        count++;
+        temp = temp->next;
+    }
+    media = media / count;
+    printf("%d\n", media);
+}
+
 int main()
 {
-    long start = clock();
     char leraq[600];
 
     Jogador time[3922];
@@ -143,30 +244,24 @@ int main()
         adcionarPlayer(&time[i], dados);
     }
 
-    Jogador *lista;
-    lista = malloc(sizeof(Jogador) * 1000); // FILA FLEXIVEL
-    fim= inicio = 0;
-   
+    // fila circular aqui
 
-    int size = 0;
+    iniciarFila();
+    // FILA CIRCULAR
 
     for (int i = 0; 1; i++)
     {
-        size = i;
         char entrada[100];
         scanf("%s", entrada);
         if (strcmp(entrada, "FIM") == 0)
         {
             break;
         }
-        else
-        {   
-            int id = atoi(entrada);
-            inserir(time[id], lista);
-            calcularMedia(lista);
-        }
+        int id = atoi(entrada);
+        inserir(time[id]);
+        calcularmedia(fila);
     }
-
+    printf("inseri parça\n");
     int quantidade;
     scanf("%d", &quantidade);
     for (int i = 0; i < quantidade; i++)
@@ -178,57 +273,27 @@ int main()
         {
             int id;
             scanf("%d", &id);
-            inserir(time[id], lista);
+            inserir(time[id]);
 
-            calcularMedia(lista);
+            calcularmedia(fila);
         }
 
         else if (strcmp(entrada, "R") == 0)
         {
             int pos;
             scanf("%d", &pos);
-            remover(lista);
+            remover(fila);
         }
     }
     int count = 0;
-    for (int i = inicio; i != fim; i = (i + 1) % 1000, count++)
+    Node *temp = fila.primeiro;
+    while (temp != NULL)
     {
-        imprimir(lista[i], count);
-        
+        imprimir(temp->value, count);
+        count++;
+        temp = temp->next;
     }
 
     fclose(arq);
     return 0;
-}
-
-void calcularMedia(Jogador *lista)
-{
-    int mediaAltura;
-    int soma = 0;
-    int quantidade = 0;
-    for (int i = inicio; i != fim; i = (i + 1) % 1000)
-    {
-        int altura = atoi(lista[i].altura);
-        soma += altura;
-        quantidade++;
-    }
-    mediaAltura = soma / quantidade;
-    printf("%d\n", mediaAltura);
-}
-
-void inserir(Jogador player, Jogador *lista)
-{   
-    if((fim+1) % 1000 == inicio){// lista cheia
-        return;
-    }
-    
-    lista[fim] = clone(&player);
-    fim = (fim + 1) % 1000;
-}
-
-void remover(Jogador *lista)
-{
-    printf("(R) %s\n", lista[inicio].nome);
-    
-    inicio = (inicio + 1) % 1000;
 }

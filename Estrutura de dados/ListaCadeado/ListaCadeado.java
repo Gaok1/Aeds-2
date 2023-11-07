@@ -1,4 +1,4 @@
-package Arvore;
+package ListaCadeado;
 
 public class ListaCadeado {
     Node atual;
