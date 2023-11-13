@@ -108,7 +108,6 @@ public class Arvore {
         }
         Node temp = root;
         while (true) {
-
             if (valor < temp.getValor()) {
                 if (temp.hasesq()) {
                     temp = temp.esq;
@@ -117,7 +116,7 @@ public class Arvore {
                     System.out.println("inserido na esquerda");
                     return;
                 }else{
-                     System.out.println("valor ja existe");
+                    System.out.println("valor ja existe");
                     return;
                 }
             } else {
@@ -153,7 +152,7 @@ public class Arvore {
                     } else {
                         temp.valor = menor.valor;
                         Node pai = getPai(menor);
-                        pai.esq = null;
+                        pai.esq = menor.dir;
                     }
                 } else if (temp.hasesq()) { // achar o maior da esquerda
                     Node maior = getMaior(temp.esq);
@@ -163,7 +162,7 @@ public class Arvore {
                     } else {
                         Node pai = getPai(maior);
                         temp.valor = maior.valor;
-                        pai.dir = null;
+                        pai.dir = maior.esq;
                     }
                 } else {
                     if (temp == this.root) { // root
@@ -217,13 +216,18 @@ public class Arvore {
     }
 
     public static void main(String args[]) {
-        Arvore tree = new Arvore(10);
-        Random rand = new Random();
+        Arvore tree = new Arvore(100);
+       /*  Random rand = new Random();
         int repet = rand.nextInt(15) + 10;
         for (int i = 0; i < repet; i++) {
             tree.inserir(rand.nextInt(100));
         }
-        tree.printar();
+        tree.printar();*/
+        tree.inserir(80);
+        tree.inserir(90);
+        tree.inserir(60);
+        tree.inserir(85);
+
 
          SwingUtilities.invokeLater(() -> {
             tree.desenharArvore();

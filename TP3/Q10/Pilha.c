@@ -96,17 +96,12 @@ void split(const char *str, char delimiter, char tokens[8][100]) {
   }
 }
 
-void trocar(int *a, int *b) {
-  int temp = *a;
-  *a = *b;
-  *b = temp;
-}
 
 ///////////////////////// Pilha Ligada /////////////////////////
 
 typedef struct Node {
-  Jogador value;
-  struct Node *next;
+    Jogador value;
+    struct Node *next;
 
 } Node;
 
@@ -122,7 +117,7 @@ void iniciarPilha(Pilha *Pilha) {
 
 void remover(Pilha *Pilha) {
   if (Pilha->Topo == NULL) {
-    return;
+        return;
   }
 
   printf("(R) %s\n", Pilha->Topo->value.nome);
@@ -139,7 +134,7 @@ void inserir(Jogador x, Pilha *Pilha) {
     novo->next = Pilha->Topo;
     Pilha->Topo = novo;
 }
-
+        
 
 int main() {
   char leraq[600];
@@ -171,38 +166,24 @@ int main() {
       break;
     }
     int id = atoi(entrada);
-    inserir(time[id],Pilha);          //
-   
-    calcularmedia(Pilha);
+    inserir(time[id],Pilha);  
   }
-
-  int quantidade;
-  scanf("%d", &quantidade);
+    
   
-  for (int i = 0; i < quantidade; i++) {
-    char entrada[10];
-    scanf("%s", entrada);
 
-    if (strcmp(entrada, "I") == 0) {
-      int id;
-      scanf("%d", &id);
-      inserir(time[id],Pilha);
-
-      calcularmedia(Pilha);
-    }
-
-    else if (strcmp(entrada, "R") == 0) {
-      remover(Pilha);
-    }
-  }
-
-  int count = 0;
   Node *temp = Pilha->Topo;
+    Jogador array[2000];
+    
+  int count = 0;
   while(temp != NULL){
-    imprimir(temp->value, count);
-    count++;
+    array[count] = temp->value;
     temp = temp->next;
+    count++;
   }
+
+    for(int i = 0; i<count ; i++){
+        imprimir(array[count-i - 1], i);
+    }
 
   fclose(arq);
   return 0;

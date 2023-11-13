@@ -1,5 +1,13 @@
+import javax.swing.*;
+import java.awt.*;
 
-class Node {
+
+
+
+public class MatrizLigada extends JPanel {
+
+
+    class Node {
     protected int valor;
     protected Node cima;
     protected Node baixo;
@@ -56,11 +64,14 @@ class Node {
         this.valor = valor;
     }
 }
-
-public class MatrizLigada {
     int linhas;
     int colunas;
-    Node inicio; // posicao 1x1 na matriz
+    Node inicio; // posicao 0x0 na matriz
+
+
+
+
+
 
     MatrizLigada() {
 
@@ -85,21 +96,18 @@ public class MatrizLigada {
 
     protected void criarLinhas() {
         Node temp = inicio;
-
         for (int i = 1; i < linhas; i++) {
             Node novo = new Node(1);
             temp.setBaixo(novo);
             novo.setCima(temp);
             temp = novo;
         }
-
     }
 
     public void preencher() {
         if (inicio == null) {
             inicio = new Node(3);
         }
-
         criarLinhas();
         Node C1 = inicio;
         Node C2 = inicio.getBaixo();
@@ -109,9 +117,7 @@ public class MatrizLigada {
             criarColunas(C1, C2);
             C1 = C2;
             C2 = C2.getBaixo();
-
         }
-
     }
 
     protected void criarColunas(Node C1, Node C2) { // C1 é acima de C2
@@ -124,7 +130,6 @@ public class MatrizLigada {
                 nextC1 = new Node(1);
                 C1.setDir(nextC1);
                 nextC1.setEsq(C1);
-                
             }
             nextC1.setBaixo(nextC2);
             C2.setDir(nextC2);
@@ -133,9 +138,7 @@ public class MatrizLigada {
             C1 = nextC1;
             C2 = nextC2;
         }
-
     }
-
     public void print() {
         Node linhaTemp = inicio;
         Node ColunaTemp;
@@ -147,6 +150,34 @@ public class MatrizLigada {
             System.out.println();
         }
     }
+    public void printarDiagonal(){
+        Node temp = inicio;
+        while(true){
+            System.out.print(temp.valor+" ");
+
+            temp = temp.baixo;
+            if(temp == null){
+                break;
+            }
+            temp = temp.dir;
+        }
+        System.out.println();
+    }
+
+    public void printarDiagonalInversa(){
+        Node temp = inicio;
+        while (temp.getDir() != null) {
+            temp = temp.getDir();
+        }
+        while(true){
+            System.out.print(temp.getValor() +" ");
+            if(temp.getBaixo()== null){
+                break;
+            }
+            temp = temp.getBaixo().getEsq();
+        }
+        System.out.println();
+    }
 
     public void setPos(int linhax, int colunax, int x) { // indice de vetor
         Node elemento = inicio;
@@ -157,26 +188,65 @@ public class MatrizLigada {
         for (int i = 0; i < linhax; i++) {
             elemento = elemento.getBaixo();
         }
-
-      
-
         elemento.setValor(x);
         System.out.println();
         print();
     }
 
     public static void main(String args[]) {
-        MatrizLigada matriz = new MatrizLigada(10, 10);
+        MatrizLigada matriz = new MatrizLigada(4,4);
         matriz.print();
-        matriz.setPos(9, 9, 30);
-        Node teste = matriz.inicio;
-
-        teste = teste.getDir().getDir().getDir();
-        teste = teste.getBaixo().getBaixo().getBaixo().getBaixo().getBaixo();
-        teste = teste.getDir().getDir().getDir().getDir().getDir().getDir();
-        teste = teste.getBaixo().getBaixo().getBaixo().getBaixo();
-        System.out.println(teste.getValor());
+       
+       for(int i = 0; i<matriz.linhas; i++){
+           for(int j = 0; j<matriz.colunas; j++){
+               matriz.setPos(i, j, i+j);
+           }
+       }
+        
+        matriz.printarDiagonal();
+        matriz.printarDiagonalInversa();
+       matriz.initGUI("Matriz completa");
 
     }
+
+
+    
+
+    public void initGUI(String title) {
+        JFrame frame = new JFrame(title);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(500, 500);
+
+        frame.add(this);
+        frame.setVisible(true);
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        desenharMatriz(g);
+    }
+
+    private void desenharMatriz(Graphics g) {
+        Node linhaTemp = inicio;
+        Node colunaTemp;
+
+        int cellSize = 30; // Adjust the cell size as needed
+        int x = 50, y = 50; // Initial position
+
+        for (int i = 0; i < linhas; i++) {
+            colunaTemp = linhaTemp;
+            for (int j = 0; j < colunas; j++) {
+                g.drawRect(x, y, cellSize, cellSize);
+                g.drawString(Integer.toString(colunaTemp.getValor()), x + 10, y + 20);
+                colunaTemp = colunaTemp.getDir();
+                x += cellSize; // Move to the next column
+            }
+            x = 50; // Reset X for the next row
+            y += cellSize; // Move to the next row
+            linhaTemp = linhaTemp.getBaixo();
+        }
+    }
+    
 
 }

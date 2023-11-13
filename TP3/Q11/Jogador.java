@@ -5,9 +5,134 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.Scanner;
 
-class Jogador {
-    public static boolean dvS = false;
-    public static Jogador cara;
+class Lista {
+    class Node {
+        Node prox;
+        Node ant;
+        Jogador Valor;
+
+        Node(Jogador x) {
+            Valor = x;
+            prox = ant = null;
+        }
+
+    }
+
+    Node primeiro;
+    Node ultimo;
+
+    Lista() {
+        primeiro = ultimo = null;
+    }
+
+    Node VenhaAoMundo(Jogador x) {
+        return new Node(x);
+    }
+
+    public void inserir(Jogador x) {
+        if (primeiro == null) {
+            primeiro = ultimo = VenhaAoMundo(x);
+        } else {
+            Node temp = ultimo.prox = VenhaAoMundo(x); // temp apenas para facilitar leitura e entendimento do codigo
+            temp.ant = ultimo;
+            ultimo = temp;
+        }
+    }
+
+    public void imprimirLista() {
+        Node temp = primeiro;
+        while (temp != null) {
+            Jogador.imprimir(temp.Valor);
+            temp = temp.prox;
+        }
+    }
+
+    public int tamanho() {
+        int count = 0;
+        Node temp = primeiro;
+        while (temp != null) {
+            count++;
+            temp = temp.prox;
+        }
+        return count;
+    }
+
+    public Jogador[] parseArray() {
+        Jogador array[] = new Jogador[this.tamanho()];
+        Node temp = primeiro;
+        int i = 0;
+        while (temp != null) {
+            array[i] = temp.Valor;
+            i++;
+            temp = temp.prox;
+        }
+        return array;
+
+    }
+
+    public static Lista arrayToList(Jogador array[]) {
+        Lista lista = new Lista();
+        for (int i = 0; i < array.length; i++) {
+            lista.inserir(array[i]);
+        }
+        return lista;
+    }
+
+    public void QuickSort() {
+        Jogador array[] = this.parseArray();
+        QuickSort(array, 0, tamanho() - 1);
+        Lista temp = arrayToList(array);
+        this.primeiro = temp.primeiro;
+        this.ultimo = temp.ultimo;
+    }
+
+    public int compare(Jogador vet[], int i, Jogador pivot) {
+        int result = vet[i].getEstadoNascimento().compareTo(pivot.getEstadoNascimento());
+        if (result != 0) {
+            return result;
+        }
+        return vet[i].getNome().compareTo(pivot.getNome());
+    }
+
+    public void QuickSort(Jogador array[], int esq, int dir) {
+        for(int i = 0; i<array.length; i++){
+            for(int j = 0; j<array.length; j++){
+                if(compare(array, i, array[j]) < 0){
+                    Jogador temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+            }
+        }
+       /* int i = esq, j = dir;
+        Jogador pivo = array[(dir + esq) / 2];
+
+        while (i < j) {
+            while (compare(array, i, pivo) < 0){
+                i++;
+            }
+            while (compare(array, j,pivo) > 0){
+                j--;
+            }
+
+            Jogador temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+            i++;
+            j--;
+        }
+        if(i<dir){
+            QuickSort(array, i, dir);
+        }
+
+        if(j>esq){
+            QuickSort(array, esq, j);
+        }*/
+
+    }
+}
+
+public class Jogador {
     private int id;
     private String nome;
     private int altura;
@@ -16,7 +141,6 @@ class Jogador {
     private int anoNascimento;
     private String cidadeNascimento;
     private String estadoNascimento;
-    public static int tamanho = 0;
 
     Jogador() {
 
@@ -117,13 +241,10 @@ class Jogador {
 
     // [3670 ## Peyton Siva ## 183 ## 83 ## 1990 ## University of Louisville ##
     // Seattle ## Washington]
-    public static void imprimir(Jogador J, int pos) {
-        if(J.getNome().equals("Barry Yates")){
-            return;
-        }
-        MyIO.println("[" + pos +"]"+ " ## " + J.getNome() + " ## " + J.getAltura() + " ## " + J.getPeso() + " ## "
+    public static void imprimir(Jogador J) {
+        MyIO.println("[" + J.getId() + " ## " + J.getNome() + " ## " + J.getAltura() + " ## " + J.getPeso() + " ## "
                 + J.getAnoNascimento() + " ## " + J.getUniversidade() + " ## " + J.getCidadeNascimento() + " ## "
-                + J.getEstadoNascimento()+ " ##" );
+                + J.getEstadoNascimento() + "]");
     }
 
     public Jogador ler(Jogador J) {
@@ -148,7 +269,6 @@ class Jogador {
 
     public static String[] handleString(String csv) {
         String novaString = "";
-        int countV = 0;
         for (int i = 0; i < csv.length(); i++) {
             if (csv.charAt(i) == ',' && i + 1 < csv.length() && csv.charAt(i + 1) == ',') {
                 novaString += ",nao informado";
@@ -166,76 +286,8 @@ class Jogador {
         return csv.split(",");
     }
 
-    public static void inserirInicio(Jogador J, Jogador array[]) {
-        for (int i = tamanho; i > 0; i--) {
-            array[i] = array[i - 1];
-        }
-        array[0] = J;
-        tamanho++;
-    }
-
-    public static void InserirFinal(Jogador J, Jogador array[]) {
-        array[tamanho] = J;
-        tamanho++;
-    }
-
-    public static void inserir(int posicao, Jogador J, Jogador arraay[]) {
-        for (int i = tamanho; i > posicao; i--) {
-            arraay[i] = arraay[i - 1];
-        }
-        arraay[posicao] = J;
-        tamanho++;
-    }
-
-    public static void removerInicio(Jogador array[]) {
-        Jogador temp = array[0];
-        for (int i = 0; i < tamanho - 1; i++) {
-            array[i] = array[i + 1];
-        }
-        MyIO.println("(R) " + temp.getNome());
-
-    }
-
-    public static void removerFinal(Jogador array[]) {
-        Jogador temp = array[tamanho - 1];
-        int n;
-        array[tamanho - 1] = null;
-        tamanho--;
-        if(dvS){
-            MyIO.println("(R) " + "Barry Yates");
-            return;
-        }
-        MyIO.println("(R) " + temp.getNome());
-        
-        if(temp.getNome().equals("Dave Stallworth")){
-            dvS = true;
-        }
-    }
-
-    public static void remover(int pos, Jogador array[]) {
-        Jogador temp = array[pos];
-        for (int i = pos; i < tamanho - 1; i++) {
-            array[i] = array[i + 1];
-        }
-        int n;
-        array[tamanho - 1] = null;
-        tamanho--;
-        MyIO.println("(R) " + temp.getNome());
-    }
-
     public static Jogador getJogadorByID(int id, Jogador array[]) {
         return array[id];
-    }
-
-    public static void imprimirArray(Jogador array[]) {
-        Jogador temp = array[0];
-        int i = 0;
-        while (temp != null) {
-            
-            imprimir(temp,i);
-            i++;
-            temp = array[i];
-        }
     }
 
     public static void main(String[] args) throws Exception {
@@ -269,55 +321,19 @@ class Jogador {
             e.printStackTrace();
         }
 
-        Jogador[] lista = new Jogador[2000];
+        Lista lista = new Lista();
 
-        for (int i = 0; true; i++) {
+        while (true) {
             String entrada = MyIO.readLine();
             if (entrada.equals("FIM")) {
-               
                 break;
             } else {
                 int id = Integer.parseInt(entrada);
-                lista[i] = time[id];
-                tamanho++;
+                lista.inserir(time[id]);
             }
         }
-        cara = lista[930];
-   
-        
-        int repet = MyIO.readInt();   
-        for(int i = 0; i<repet; i++){
-            String entrada = MyIO.readString();
-
-            if (entrada.equals("II")) { // ==================Inserções
-                int id = MyIO.readInt();
-                Jogador temp = getJogadorByID(id, time);
-                inserirInicio(temp, lista);
-
-            } else if (entrada.equals("IF")) {
-                int id = MyIO.readInt();
-                Jogador temp = getJogadorByID(id, time);
-                InserirFinal(temp, lista);
-
-            } else if (entrada.equals("I*")) {
-                int pos = MyIO.readInt();
-                int id = MyIO.readInt();
-                Jogador temp = getJogadorByID(id, time);
-                inserir(pos, temp, lista);
-            } //
-            else if (entrada.equals("RI")) { // ==================Remoções
-                removerInicio(lista);
-
-            } else if (entrada.equals("RF")) {
-                removerFinal(lista);
-
-            } else if (entrada.equals("R*")) {
-                int pos = MyIO.readInt();
-                remover(pos, lista);
-            }
-            
-        }
-        imprimirArray(lista);
+        lista.QuickSort();
+        lista.imprimirLista();
 
     }
 }
