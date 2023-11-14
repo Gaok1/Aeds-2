@@ -5,48 +5,100 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.util.Scanner;
 
-class Pilha {
-    private Node Topo;
-
- 
+class Lista {
+    private Node ultimo;
+    private Node primeiro;
 
     public Node getUlitmo() {
-        return Topo;
+        return ultimo;
     }
 
- 
-
-    public void setTopo(Node x) {
-        this.Topo = x;
+    public Node getprimeiro() {
+        return primeiro;
     }
 
-  
-
-    public void inserir(Jogador x) {
-       if(Topo == null){
-        Topo = new Node(x);
-        return;
-       }
-       Node newnode = new Node(x);
-       newnode.setProx(Topo);
-       Topo = newnode;
+    public void setprimeiro(Node x) {
+        this.primeiro = x;
     }
 
- 
+    public void setUltimo(Node x) {
+        this.ultimo = x;
+    }
 
-    public void remover() {
-        if (Topo != null) {
-            Node temp = Topo;
-            Topo = Topo.getProx();
-            System.out.println("(R) "+temp.getValue().getNome());
+    public void inserirInicio(Jogador x) {
+
+        if (primeiro == null) {
+            primeiro = new Node(x);
+            return;
         }
-       
+        Node temp = new Node(x);
+        temp.setProx(primeiro);
+        primeiro = temp;
+
     }
 
-  
+    public void inserirFinal(Jogador x) {
+        if (primeiro == null) {
+            primeiro = ultimo = new Node(x);
+        }else{
+            
+        ultimo.setProx(new Node(x));
+        ultimo = ultimo.getProx();
+        }
 
-    public void imprimirPilha() {
-        Node temp = Topo;
+
+    }
+
+    public void inserir(int pos, Jogador x) {
+        Node temp = primeiro;
+        for (int i = 1; i < pos; i++) { // para no anterior ao index
+            if (temp == null)
+                return;
+
+            temp = temp.getProx();
+        }
+        Node port = temp.prox;
+        temp.setProx(new Node(x));
+        temp.getProx().setProx(port);
+
+    }
+
+    public void removerInicio() {
+        if (primeiro != null){
+
+         System.out.println("(R) " + primeiro.getValue().getNome());
+        primeiro = primeiro.prox;
+        }
+    }
+
+    public void removerFinal() {
+        if (ultimo != null) {
+            System.out.println("(R) " + ultimo.getValue().getNome());
+            if (primeiro == ultimo) {
+                ultimo = primeiro = null;
+                return;
+            }
+                Node temp = primeiro;
+                while (temp.prox != ultimo) {
+                    temp = temp.prox;
+                }
+                ultimo = temp;
+                temp.setProx(null);
+        }
+    }
+
+    public void remover(int pos){
+        Node temp = primeiro;
+        
+        for(int i = 1; i<pos; i++){
+            temp = temp.prox;
+        }
+        System.out.println("(R) " + temp.getProx().getValue().getNome());
+        temp.setProx(temp.getProx().getProx());
+    }
+
+    public void imprimirLista() {
+        Node temp = primeiro;
         int i = 0;
         while (temp != null) {
 
@@ -93,7 +145,8 @@ public class Jogador {
     private int anoNascimento;
     private String cidadeNascimento;
     private String estadoNascimento;
-    
+    public static int tamanho = 0;
+
     Jogador() {
 
     }
@@ -278,7 +331,7 @@ public class Jogador {
         }
 
        
-        Pilha Pilha = new Pilha();
+        Lista lista = new Lista();
 
         while (true) {
             String entrada = MyIO.readLine();
@@ -286,28 +339,45 @@ public class Jogador {
                 break;
             } else {
                 int id = Integer.parseInt(entrada);
-                Pilha.inserir(time[id]);
-                
+                lista.inserirFinal(time[id]);
+                tamanho++;
             }
         }
 
-    
         
         int repet = MyIO.readInt();   
         for(int i = 0; i<repet; i++){
             String entrada = MyIO.readString();
 
-        if (entrada.equals("I")) {
+            if (entrada.equals("II")) { // ==================Inserções
                 int id = MyIO.readInt();
                 Jogador temp = getJogadorByID(id, time);
-                Pilha.inserir(temp);
-            } 
-            else if (entrada.equals("R")) {
-                Pilha.remover();
-            } 
+                lista.inserirInicio(temp);
+
+            } else if (entrada.equals("IF")) {
+                int id = MyIO.readInt();
+                Jogador temp = getJogadorByID(id, time);
+                lista.inserirFinal(temp);
+
+            } else if (entrada.equals("I*")) {
+                int pos = MyIO.readInt();
+                int id = MyIO.readInt();
+                Jogador temp = getJogadorByID(id, time);
+                lista.inserir(pos, temp);
+            } //
+            else if (entrada.equals("RI")) { // ==================Remoções
+                lista.removerInicio();
+
+            } else if (entrada.equals("RF")) {
+                lista.removerFinal();
+
+            } else if (entrada.equals("R*")) {
+                int pos = MyIO.readInt();
+                lista.remover(pos);
+            }
             
         }
-        Pilha.imprimirPilha();
+        lista.imprimirLista();
 
     }
 }
