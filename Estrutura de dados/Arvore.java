@@ -63,6 +63,9 @@ public class Arvore {
     Arvore(int valor) {
         setRoot(valor);
     }
+    public Node getRoot(){
+        return this.root;
+    }
 
     public void setRoot(int valor) {
         if (valor == -1) {
@@ -206,90 +209,63 @@ public class Arvore {
 
     }
 
-    public void desenharArvore() {
+    public DesenhoArvore desenharArvore() {
         JFrame frame = new JFrame("Árvore Binária");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(800, 600);
+        frame.setSize(1200, 900);
         DesenhoArvore panel = new DesenhoArvore(this.root);
         frame.add(panel);
         frame.setVisible(true);
+        return panel;
     }
 
     public static void main(String args[]) {
         Arvore tree = new Arvore(100);
-       /*  Random rand = new Random();
+        Random rand = new Random();
+        DesenhoArvore panel = tree.desenharArvore();
+
         int repet = rand.nextInt(15) + 10;
         for (int i = 0; i < repet; i++) {
             tree.inserir(rand.nextInt(100));
         }
-        tree.printar();*/
-        tree.inserir(80);
-        tree.inserir(90);
-        tree.inserir(60);
-        tree.inserir(85);
-
-
-         SwingUtilities.invokeLater(() -> {
-            tree.desenharArvore();
-        });
-
+        tree.printar();
+        
+        Scanner scanner = new Scanner(System.in);
         while (true) {
-            System.out.println("digite o numero que deve ser retirao da arvore");
-            int x = Integer.parseInt(System.console().readLine());
+            System.out.println("Digite o número que deve ser retirado da árvore ou -1 para sair:");
+            int x = scanner.nextInt();
+            if (x == -1) {
+                break;
+            }
             tree.remover(x);
-             SwingUtilities.invokeLater(() -> {
-            tree.desenharArvore();
-        });
+            SwingUtilities.invokeLater(() -> {
+                panel.atualizarArvore(tree.getRoot()); // Atualize a instância existente
+            });
         }
 
        
 
     }
 
-   public class DesenhoArvore extends JPanel {
+ public class DesenhoArvore extends JPanel {
     private Node raiz;
-    private Point mousePressedPoint;
 
     DesenhoArvore(Node raiz) {
         this.raiz = raiz;
-
-        addMouseListener(new MouseAdapter() {
-      
-            public void mousePressed(MouseEvent e) {
-                mousePressedPoint = e.getPoint();
-            }
-        });
-
-        addMouseMotionListener(new MouseAdapter() {
-           
-            public void mouseDragged(MouseEvent e) {
-                if (mousePressedPoint != null) {
-                    int dx = e.getX() - mousePressedPoint.x;
-                    int dy = e.getY() - mousePressedPoint.y;
-                    mousePressedPoint = e.getPoint();
-                    // Atualize as coordenadas dos nós da árvore com dx e dy para mover a tela.
-                    // Redesenhe a árvore com as novas coordenadas.
-                    atualizarCoordenadasArvore(raiz, dx, dy);
-                    repaint(); // Redesenhe a tela
-                }
-            }
-        });
-
-        addMouseListener(new MouseAdapter() {
-          
-            public void mouseReleased(MouseEvent e) {
-                mousePressedPoint = null;
-            }
-        });
     }
 
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        desenharArvore(g, getWidth() / 2, 30, raiz, getWidth() / 4);
+        desenharArvore(g, getWidth() / 2, 30, raiz, getWidth() / 4, 1);
     }
 
-    private void desenharArvore(Graphics g, int x, int y, Node node, int xOffset) {
+    public void atualizarArvore(Node novoRaiz) {
+        this.raiz = novoRaiz;
+        repaint(); // Força a repintura da tela
+    }
+
+    private void desenharArvore(Graphics g, int x, int y, Node node, int xOffset, int nivel) {
         if (node == null) {
             return;
         }
@@ -301,33 +277,31 @@ public class Arvore {
             int newX = x - xOffset;
             int newY = y + 60;
             g.drawLine(x, y + 15, newX, newY - 15);
-            desenharArvore(g, newX, newY, node.esq, xOffset / 2);
+
+            // Ajuste do xOffset com base no número de níveis abaixo da raiz
+            int novoXOffset = xOffset - nivel * 10;
+
+            // Garantir que o novoXOffset seja pelo menos 20
+            novoXOffset = Math.max(20, novoXOffset);
+
+            desenharArvore(g, newX, newY, node.esq, novoXOffset, nivel + 1);
         }
 
         if (node.hasdir()) {
             int newX = x + xOffset;
             int newY = y + 60;
             g.drawLine(x, y + 15, newX, newY - 15);
-            desenharArvore(g, newX, newY, node.dir, xOffset / 2);
-        }
-    }
 
-    private void atualizarCoordenadasArvore(Node node, int dx, int dy) {
-        if (node == null) {
-            return;
-        }
+            // Ajuste do xOffset com base no número de níveis abaixo da raiz
+            int novoXOffset = xOffset - nivel * 10;
 
-        node.setX(node.getX() + dx);
-        node.setY(node.getY() + dy);
+            // Garantir que o novoXOffset seja pelo menos 20
+            novoXOffset = Math.max(20, novoXOffset);
 
-        if (node.hasesq()) {
-            atualizarCoordenadasArvore(node.esq, dx, dy);
-        }
-
-        if (node.hasdir()) {
-            atualizarCoordenadasArvore(node.dir, dx, dy);
+            desenharArvore(g, newX, newY, node.dir, novoXOffset, nivel + 1);
         }
     }
 }
 }
+
 
