@@ -1,1 +1,28 @@
+IO - Simplificando Entrada e Saída em C
 
+O header IO foi criado com o objetivo de eliminar problemas comuns no processo de entrada e saída em C, oferecendo funções simples e intuitivas.
+
+Funcionalidades Principais:
+1- Funções de Entrada (Input)
+As funções de entrada baseiam-se em getchar para analisar cada caractere de entrada, evitando problemas com o buffer que podem ocorrer ao utilizar a função scanf.
+
+readChar: Lê um caractere do console, ignorando espaços, tabs e quebras de linha.
+
+readln: Lê uma linha completa do console, eliminando problemas com o buffer de entrada.
+
+readInt: Lê um número inteiro do console, ignorando espaços, tabs e quebras de linha.
+
+readFloat e readDouble: Lê números de ponto flutuante do console, considerando espaços, tabs e quebras de linha.
+
+readString: Lê uma string do console, ignorando espaços, tabs e quebras de linha.
+
+2-Funções de Saída (Output)
+print e println: Semelhantes ao printf, estas funções permitem formatação e impressão no console.
+Funções Combinadas
+Ask: Simplifica o processo de entrada de dados, economizando linhas de código ao criar, imprimir e ler variáveis em uma única linha.
+
+3-Como Usar
+Inclua o header IO.h no início do seu código. ex: #include "IO.h"
+  lembre de colocar o cabeçalho IO no diretorio do programa
+
+Utilize as funções disponíveis conforme necessário, tornando o processo de entrada e saída mais intuitivo e livre de problemas comuns.
