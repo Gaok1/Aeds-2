@@ -1,0 +1,6 @@
+Quick SORT
+Tempo de geração: 417ms
+Tempo de ordenação: 2.398ms
+Comparacoes: 678.441.598
+Movimentacoes: 1.091.136.696
+Tamanho do array: 22.000.000

@@ -1,0 +1,45 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CopyFiles",
+      "request": "launch",
+      "mainClass": "CopyFiles",
+      "projectName": "sim_51df60b1"
+    },
+    {
+      "type": "java",
+      "name": "OrganizarDownloads",
+      "request": "launch",
+      "mainClass": "OrganizarDownloads",
+      "projectName": "sim_51df60b1"
+    },
+    {
+      "type": "java",
+      "name": "MoverArquivos",
+      "request": "launch",
+      "mainClass": "MoverArquivos",
+      "projectName": "sim_51df60b1"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/Gaok1/Desktop/sim/NAO",
+      "program": "c:/Users/Gaok1/Desktop/sim/NAO/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

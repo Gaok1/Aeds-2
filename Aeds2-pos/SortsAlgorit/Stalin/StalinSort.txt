@@ -1,0 +1,6 @@
+STALINSORT
+Tempo de geração: 424ms
+Tempo de ordenação: 34ms
+Comparacoes: 22.000.000
+Movimentacoes: 22.000.040
+Tamanho do array: 20

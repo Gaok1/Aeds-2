@@ -1,0 +1,6 @@
+TREE SORT
+Tempo de geração: 18.654ms
+Tempo de ordenação: 0ms
+Comparacoes: 1.025.082.960
+Movimentacoes: 21.999.999
+Tamanho do array: 22.000.000

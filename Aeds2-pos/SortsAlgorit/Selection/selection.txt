@@ -1,0 +1,6 @@
+Selection SORT
+Tempo de geração: 1ms
+Tempo de ordenação: Mais de 30 minutos
+Comparacoes: MUITAS
+Movimentacoes: MUITAS
+Tamanho do array: 22.000.000
