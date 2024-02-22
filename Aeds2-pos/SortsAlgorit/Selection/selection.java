@@ -11,7 +11,7 @@ import java.text.NumberFormat;
  * 
  */
 public class selection {
-    static final int MAX = 22000000;
+    static final int MAX = 100;
     static int arr[];
     static int tamanho;
     static int movimentacoes = 0;

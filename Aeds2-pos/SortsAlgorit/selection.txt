@@ -1,0 +1,6 @@
+Selection SORT
+Tempo de geração: 0ms
+Tempo de ordenação: 0ms
+Comparacoes: 4.950
+Movimentacoes: 602
+Tamanho do array: 100
